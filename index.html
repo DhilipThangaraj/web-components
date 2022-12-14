@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Components Example</title>
-</head>
-<body>
+    <style>
+      h3 {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
     <h3>Hello World</h3>
-    <user-card name="dhilip kumar"></user-card>
-    <user-card name="Jane doe"></user-card>
+    <user-card
+      name="dhilip kumar"
+      avatar="https://randomuser.me/api/portraits/men/1.jpg"
+    >
+      <div slot="email">dk@gmail.com</div>
+      <div slot="phone">999-3777</div>
+    </user-card>
+    <user-card
+      name="deepa"
+      avatar="https://randomuser.me/api/portraits/women/1.jpg"
+    >
+      <div slot="email">deep@gmail.com</div>
+      <div slot="phone">999-3777</div>
+    </user-card>
     <script src="userCard.js"></script>
-</body>
+  </body>
 </html>
