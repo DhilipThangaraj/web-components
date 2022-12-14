@@ -13,6 +13,7 @@ information which helps to understand how to create web components which is basi
 
 syntax:
 class AppDrawer extends HTMLElement {...}
+
 window.customElements.define("app-drawer",AppDrawer); // hipon is important
 
 Life cycle:
